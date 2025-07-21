@@ -48,10 +48,7 @@ def get_feedback(email):
 
 def get_full_user_context(email):
     data = get_user_profile(email)
-   
 
-    if not data['profile'] and not data['goals'] and not data['feedback']:
-        return None
 
     return  data
 
